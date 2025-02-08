@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookinghotel</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!-- <link rel="stylesheet" href="./assets/fontawesome/css/all.css"> -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <!-- <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body id="">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-fluid header-main">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <div class="menu-toggle">
+                        <div class="hamburger">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <nav class="nav menu-nav">
+                        <ul class="menu-list">
+                            <li class="menu-item hasChildren">
+                                <a href="#" class="menu-link">Location <span class="sub-arrow"></span></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="">Boutique Hotel</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Boutique Resort</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./offers.html" class="menu-link">Offers</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./gallery.html" class="menu-link">Gallery</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./contact.html" class="menu-link">Contact us</a>
+                            </li>
+                            <li class="menu-item button-booking">
+                                <a href="" class="menu-link ">Book now</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner">
+                <div class="banner-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="./assets/images/banner-1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/images/banner-2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/images/banner-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="check-availability home-booking">
+                    <div class="check-availability-wrap">
+                        <div class="form-top">
+                            <div class="form-top-logo">
+                                <img src="./assets/images/reser-trip.png" alt="">
+                            </div>
+                            <div class="reser-text">
+                                Reservations :
+                                <a class="phone" href="tel:+84.2.543.858.859"> +84.2.543.858.859</a>
+                            </div>
+                        </div>
+                        <div class="form-availability">
+                            <form action="">
+                                <div class="close-btn">X</div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Hotel</label>
+                                            <div class="input-group">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Please select a Hotel</option>
+                                                    <option value="">The Wind Boutique Resort</option>
+                                                    <option value="">Mountain Side Boutique Hotel</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="">Date<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <input type="text" name="" id="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group promocode">
+                                            <label for="">&nbsp;</label>
+                                            <div class="input-group">
+                                                <input type="text" name="" id="" class="form-control"
+                                                    placeholder="Having a Promo Code?">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group form-btn">
+                                            <div class="best-txt">
+                                                <a href="">best rate
+                                                    guaranteed</a>
+                                            </div>
+                                            <button type="submit" class="btn btn-submit">Show price</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="benefits">
+                <div class="container-fluid">
+                    <div class="benefits-wrap">
+                        <div class="benefits-wrap__inner clearfix">
+                            <div class="section-title">
+                                <div class="small">Book Direct</div>
+                                <div class="large">Benefits</div>
+                            </div>
+                            <div class="benefits-slider owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </div>
+                                    <div class="labels">
+                                        10% Discount<br>
+                                        use promo code<br>
+                                        <b>MEMBERSONLY</b>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </div>
+                                    <div class="labels">
+                                        10% Discount<br>
+                                        use promo code<br>
+                                        <b>MEMBERSONLY</b>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </div>
+                                    <div class="labels">
+                                        10% Discount<br>
+                                        use promo code<br>
+                                        <b>MEMBERSONLY</b>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </div>
+                                    <div class="labels">
+                                        10% Discount<br>
+                                        use promo code<br>
+                                        <b>MEMBERSONLY</b>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </div>
+                                    <div class="labels">
+                                        10% Discount<br>
+                                        use promo code<br>
+                                        <b>MEMBERSONLY</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about corporate">
+                <div class="container">
+                    <div class="about-area">
+                        <div class="section-sub-title-top">Your Bliss Begins</div>
+                        <div class="section-title">IN BEAUTIFUL VUNG TAU</div>
+                        <div class="section-sub-title">A relaxing escape</div>
+                        <div class="text">
+                            Just 2 hours from Ho Chi Minh City, Vung Tau is the favorite place to escape for family
+                            bonding,
+                            romance, or personal retreats. As winner of Vietnam's "Best Boutique Resort", we're
+                            passionate about helping you
+                            discover authentic local experiences in comfort and style. Your time off is precious, so let
+                            us help you make the
+                            most of it.
+                        </div>
+                        <div class="share-section clearfix">
+                            <div class="share-btn">
+                                <a class="source-wrap" href="https://www.thewind.com.vn/plan-your-escape.html">
+                                    <div class="txt">Explore with us</div>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-spinner"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="share-btn">
+                                <a href="#" data-toggle="modal" data-target="#eme-share">
+                                    <div class="txt">share</div>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-share-nodes"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-area lazy-background" data-imgsrc=""
+                        style="background-image: url('./assets/images/welcome-section-flower.png');"></div>
+                </div>
+            </section>
+            <section class="thingsto">
+                <div class="thingsto-wrap" style="background: url('./assets/images/vung-tau-1900x600-dark.jpg');">
+                    <div class="title-area">
+                        <div class="sub">So Much To Do</div>
+                        <div class="text-main" style="margin-bottom: 12px;">in Vung Tau</div>
+                        <div class="sub">Activity Guide</div>
+                    </div>
+                </div>
+            </section>
+            <section class="ways-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="ways-wrap">
+                                <div class="section-title">
+                                    <span class="ways-one">two ways</span>
+                                    <span class="ways-two"> to experience</span>
+                                </div>
+                                <div class="content-area">
+                                    <a href="" class="box">
+                                        <div class="img-area"
+                                            style="background: url('./assets/images/poolspa-header-1900x600-1.jpg');">
+                                        </div>
+                                        <div class="content">
+                                            <div class="small">the wind</div>
+                                            <div class="title">Resort</div>
+                                            <div class="txt">Luxury Suites <br>Exclusive Hillside Location</div>
+                                            <span class="site-btn round-corner-btn white-btn">find out more</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="box">
+                                        <div class="img-area"
+                                            style="background: url('./assets/images/psd-hotel-image.jpg');">
+                                        </div>
+                                        <div class="content">
+                                            <div class="small">the wind</div>
+                                            <div class="title">Hotel</div>
+                                            <div class="txt">An oasis of calm &amp; relaxation<br>Inner city convenience
+                                            </div>
+                                            <span class="site-btn round-corner-btn white-btn">find out more</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="offers tb-space">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="offers-wrap">
+                                <div class="section-title">offers</div>
+                                <div class="content-area">
+                                    <div class="offers-slider owl-carousel owl-theme">
+                                        <div class="item clearfix">
+                                            <a href="./details-offers.html" class="clearfix">
+                                                <div class="img-section"
+                                                    style="background-image: url('./assets/images/pool-300x400-1.jpg');">
+                                                </div>
+                                                <div class="content-section">
+                                                    <div class="contents">
+                                                        <div class="sub">Resort Offer</div>
+                                                        <div class="title">Spa and Pool – day</div>
+                                                        <div class="content">Relax in our beautiful setting, and enjoy
+                                                            our award-winning Pool ...</div>
+                                                        <span class="site-btn">find out more</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item clearfix">
+                                            <a href="./details-offers.html" class="clearfix">
+                                                <div class="img-section"
+                                                    style="background-image: url('./assets/images/pool-300x400-1.jpg');">
+                                                </div>
+                                                <div class="content-section">
+                                                    <div class="contents">
+                                                        <div class="sub">Resort Offer</div>
+                                                        <div class="title">Spa and Pool – day</div>
+                                                        <div class="content">Relax in our beautiful setting, and enjoy
+                                                            our award-winning Pool ...</div>
+                                                        <span class="site-btn">find out more</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item clearfix">
+                                            <a href="./details-offers.html" class="clearfix">
+                                                <div class="img-section"
+                                                    style="background-image: url('./assets/images/pool-300x400-1.jpg');">
+                                                </div>
+                                                <div class="content-section">
+                                                    <div class="contents">
+                                                        <div class="sub">Resort Offer</div>
+                                                        <div class="title">Spa and Pool – day</div>
+                                                        <div class="content">Relax in our beautiful setting, and enjoy
+                                                            our award-winning Pool ...</div>
+                                                        <span class="site-btn">find out more</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="exp-testo tb-space hidden-xs hidden-sm hidden-md">
+                <div class="container">
+                    <div class="testo">
+                        "Just finished a fantastic week in this beautiful hotel. What can I say! I don’t think I’ve ever
+                        had
+                        a more relaxed or enjoyable stay anywhere in Asia. … I was sad to leave.
+                        "
+                    </div>
+                    <div class="name">Howard K / Tripadvisor </div>
+                </div>
+            </section>
+
+            <section class="experience tb-space">
+                <div class="content-area clearfix">
+                    <a href="" class="box wow fadeInUp">
+                        <div class="name">your</div>
+                        <div class="topic">Family</div>
+                        <div class="last">experience</div>
+                        <div class="content hidden-xs hidden-sm hidden-md">
+                            Build memories to last a lifetime. With facilities kids love &amp; space for grown-ups to
+                            unwind </div>
+                        <div class="btn-wrap">
+                            <span class="site-btn round-corner-btn white-btn hidden-xs hidden-sm hidden-md">find out
+                                more</span>
+                        </div>
+                    </a>
+                    <a href="" class="box wow fadeInUp">
+                        <div class="name">your</div>
+                        <div class="topic">Romance</div>
+                        <div class="last">experience</div>
+                        <div class="content hidden-xs hidden-sm hidden-md">
+                            Our romantic gardens and luxurious amenities are the perfect way to build romance </div>
+                        <div class="btn-wrap">
+                            <span class="site-btn round-corner-btn white-btn hidden-xs hidden-sm hidden-md">find out
+                                more</span>
+                        </div>
+                    </a>
+                    <a href="" class="box wow fadeInUp">
+                        <div class="name">your</div>
+                        <div class="topic">Business</div>
+                        <div class="last">experience</div>
+                        <div class="content hidden-xs hidden-sm hidden-md">
+                            Success at work comes naturally when you’re well-rested and healthy </div>
+                        <div class="btn-wrap">
+                            <span class="site-btn round-corner-btn white-btn hidden-xs hidden-sm hidden-md">find out
+                                more</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="exp-testo tb-space hidden-xs hidden-sm hidden-md">
+                <div class="container">
+                    <div class="testo">
+                        "I’ve stayed in several resorts in different areas of Vung Tau and The Wind, for me, trumps them
+                        all.
+                        "
+                    </div>
+                    <div class="name">Robert / Booking.com </div>
+                </div>
+            </section>
+
+            <section class="we-make">
+                <div class="row m-0">
+                    <div class="col-sm-10 col-lg-12">
+                        <div class="we-make-section">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5">
+                                    <div class="main-img">
+                                        <img src="./assets/images/we-make.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="contents-area">
+                                        <div class="sub-title">
+                                            <div class="section-title" style="color:#787878;">Planning a trip can be
+                                                stressful. </div>
+                                        </div>
+                                        <div class="section-title">
+                                            <div class="sub-title" style="color:#08243c;">We’re here to help. </div>
+                                        </div>
+                                        <div class="content-area clearfix">
+                                            <div class="list-area">
+                                                <ul>
+                                                    <li>How to get here (fast and easy)</li>
+                                                    <li>You do the relaxing. We’ll handle the details.
+                                                        (Free driver, mobile phone, and things to do).
+                                                    </li>
+                                                    <li>Our Guarantee: Happy or we make it Right.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-wrap">
+                                                <a href="https://www.thewind.com.vn/plan-your-escape.html"
+                                                    class="site-btn round-corner-btn">find
+                                                    out
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-md-8">
+                            <div class="reviews-section">
+                                <div class="section-title">reviews</div>
+                                <div class="content-area">
+                                    <div class="owl-carousel owl-theme reviews-slider ">
+                                        <div class="item">
+                                            <div class="contents">
+                                                <div class="rev-title">Highly Recommendable Resort in Vung Tau</div>
+                                                <div class="rev-content">Thank you for the lovely 2 nights 3 days stay
+                                                    at the Resort.
+                                                    Located in the mountain with a fantastic view, peaceful and
+                                                    beautiful surroundings,
+                                                    friendly and attentive staff, great breakfast selection, excellent
+                                                    facilities, and good
+                                                    value for money. Highly recommendable in Vung Tau, it exceeded my
+                                                    expectations. </div>
+                                                <div class="rev-content1" style="display: none;">Thank you for the
+                                                    lovely 2 nights 3 days
+                                                    stay at the Resort. Located in the mountain with a fantastic view,
+                                                    peaceful and
+                                                    beautiful surroundings, friendly and attentive staff, great
+                                                    breakfast selection,
+                                                    excellent facilities, and good value for money. Highly recommendable
+                                                    in Vung Tau, it
+                                                    exceeded my expectations. </div>
+                                            </div>
+                                            <div class="bottom clearfix">
+                                                <a href="" class="logotrip">
+                                                    <img src="./assets/images/review-logo.png" alt="" title="">
+                                                </a>
+                                                <div class="name-wrap">
+                                                    <div class="name-item">Linda Nguyen</div>
+                                                    <div class="country">Vietnam</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="contents">
+                                                <div class="rev-title">Highly Recommendable Resort in Vung Tau</div>
+                                                <div class="rev-content">Thank you for the lovely 2 nights 3 days stay
+                                                    at the Resort.
+                                                    Located in the mountain with a fantastic view, peaceful and
+                                                    beautiful surroundings,
+                                                    friendly and attentive staff, great breakfast selection, excellent
+                                                    facilities, and good
+                                                    value for money. Highly recommendable in Vung Tau, it exceeded my
+                                                    expectations. </div>
+                                                <div class="rev-content1" style="display: none;">Thank you for the
+                                                    lovely 2 nights 3 days
+                                                    stay at the Resort. Located in the mountain with a fantastic view,
+                                                    peaceful and
+                                                    beautiful surroundings, friendly and attentive staff, great
+                                                    breakfast selection,
+                                                    excellent facilities, and good value for money. Highly recommendable
+                                                    in Vung Tau, it
+                                                    exceeded my expectations. </div>
+                                            </div>
+                                            <div class="bottom clearfix">
+                                                <a href="" class="logotrip">
+                                                    <img src="./assets/images/review-logo.png" alt="" title="">
+                                                </a>
+                                                <div class="name-wrap">
+                                                    <div class="name-item">Linda Nguyen</div>
+                                                    <div class="country">Vietnam</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="contents">
+                                                <div class="rev-title">Highly Recommendable Resort in Vung Tau</div>
+                                                <div class="rev-content">Thank you for the lovely 2 nights 3 days stay
+                                                    at the Resort.
+                                                    Located in the mountain with a fantastic view, peaceful and
+                                                    beautiful surroundings,
+                                                    friendly and attentive staff, great breakfast selection, excellent
+                                                    facilities, and good
+                                                    value for money. Highly recommendable in Vung Tau, it exceeded my
+                                                    expectations. </div>
+                                                <div class="rev-content1" style="display: none;">Thank you for the
+                                                    lovely 2 nights 3 days
+                                                    stay at the Resort. Located in the mountain with a fantastic view,
+                                                    peaceful and
+                                                    beautiful surroundings, friendly and attentive staff, great
+                                                    breakfast selection,
+                                                    excellent facilities, and good value for money. Highly recommendable
+                                                    in Vung Tau, it
+                                                    exceeded my expectations. </div>
+                                            </div>
+                                            <div class="bottom clearfix">
+                                                <a href="" class="logotrip">
+                                                    <img src="./assets/images/review-logo.png" alt="" title="">
+                                                </a>
+                                                <div class="name-wrap">
+                                                    <div class="name-item">Linda Nguyen</div>
+                                                    <div class="country">Vietnam</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container">
+                    <div class="gallery-section">
+                        <div class="content-area">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="">
+                                    <a href="#instagram" class="active" aria-controls="instagram" role="tab"
+                                        data-toggle="tab" aria-expanded="false">instagram
+                                        Feed</a>
+                                </li>
+                                <li class="">
+                                    <a href="#media" aria-controls="media" role="tab" data-toggle="tab"
+                                        aria-expanded="true">media gallery</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" role="tabpanel" id="instagram">
+                                    <div class="first-row clearfix">
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                    </div>
+                                    <div class="second-row clearfix">
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="./gallery.html" class="insta-box">
+                                            <div class="title">Unforgettable<br> Holiday Memories</div>
+                                            <div class="icon-txt clearfix">
+                                                <div class="text" style="padding-left: 0;">View our Image Gallery</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" role="tabpanel" id="media">
+                                    <div class="first-row clearfix">
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/MFS4385-1.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/MFS4385-1.jpg');"></a>
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                    </div>
+                                    <div class="second-row clearfix">
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg"
+                                            data-fancybox="gallerygr" class="gallery-box"
+                                            style="background-image: url('https://d2q9qufk7zoy43.cloudfront.net/2020/03/DSC_5158_HDR-medium-2.jpg');"></a>
+                                        <a href="./gallery.html" class="insta-box">
+                                            <div class="title">Unforgettable<br> Holiday Memories</div>
+                                            <div class="icon-txt clearfix">
+                                                <div class="text" style="padding-left: 0;">View our Image Gallery</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-mains">
+                <div class="footer-top">
+                    <a href="https://www.thewind.com.vn/" id="footer-logo" class="footer-logo" title="the wind">
+                        <img src="./assets/images/logo.png" alt="" title="The Wind">
+                    </a>
+                    <div class="footer-address">
+                        <div class="item">
+                            <span>The Wind Boutique Resort &amp; Spa</span>
+                            84-B10 Phan Chu Trinh, Vung Tau City,<br> Vietnam.
+                        </div>
+                        <div class="item">
+                            <span>The Wind MountainSide Hotel</span>
+                            98 Phan Chu Trinh, Vung Tau City,<br> Vietnam.
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <div class="form-group subscribe-holder">
+                        <form class="clearfix" id="" action="" method="post">
+                            <input type="email" placeholder="Newsletter Subscription" id="param_email"
+                                name="param_email" class="subscribeemail">
+                            <input type="submit" class="site-btn" value="subscribe" id="goButId">
+                            <div class="msgbox_newsletter"></div>
+                        </form>
+                    </div>
+                    <div class="middle-section">
+                        <div class="row m-0">
+                            <div class="col-lg-2">
+                                <div class="infor">
+                                    <div class="plate">
+                                        <span class="first">Email</span>
+                                        <a class="second" href="mailto:info@thewind.com.vn">info@thewind.com.vn</a>
+                                    </div>
+                                    <div class="plate">
+                                        <span class="first">Phone</span>
+                                        <span class="second"><a href="tel:+842543858859">+84.2.543.858.859</a></span>
+                                        <span class="second"><a href="tel:02543858859">02.543.858.859 (Local)</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 hidden-xs hidden-sm hidden-md">
+                                <div class="footer-menu">
+                                    <ul id="menu-footer-menu" class="clearfix">
+                                        <li><a href="">Home</a></li>
+                                        <li><a href="">Boutique Resort</a></li>
+                                        <li><a href="">Special Offers</a></li>
+                                        <li><a href="">Boutique Hotel</a></li>
+                                        <li><a href="">Gallery</a></li>
+                                        <li><a href="">Facilities</a></li>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                        <li><a href="">Awards &amp; Recognition</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <ul id="bottom-menu" class="bottom-menu clearfix">
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Terms and Condition</a></li>
+                                    <li><a href="">GDPR Compliance</a></li>
+                                    <li><a href="">Sitemap</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="social-media">
+                                    <div class="title">Social Media</div>
+                                    <ul class="social-icons ">
+                                        <li class="share-group-item">
+                                            <a href="" target="_blank" title="Follow Us  on Facebook">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="share-group-item">
+                                            <a href="" target="_blank" title="Follow Us on Instagram">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+
+                                    <div class="copyright">Copyright © 2025 The Wind</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="develope">Website Designed &amp; Developed by <a href="http://www.emarketingeye.com/"
+                        target="_blank" class="eme-link">eMarketingEye</a></div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js "></script>
+    <script src="./assets/js/style.js "></script>
+</body>
+
+</html>

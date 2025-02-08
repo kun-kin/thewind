@@ -1,0 +1,195 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 2px 5px -4px #050505;
+    transition: top 0.5s ease;
+    background-color: #fff;
+    z-index: 999;
+    padding: 10px 0;
+    &-main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .logo{
+            img{
+                max-width: 230px;
+            }
+        }
+    }
+    &-nav{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .menu{
+            &-toggle{
+                .hamburger{
+                    font-size: 26px;
+                    cursor: pointer;
+                    color: #353535;
+                }
+                @media(min-width:1200px){
+                    display: none;
+                }
+            }
+            &-nav{
+                display: none;
+                @media(min-width:1200px){
+                    display: block;
+                }
+                @media(max-width:1199.98px){
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background-color: #fff;
+                    .menu-list{
+                        display: block;
+                        padding: 15px 0 20px;
+                        li{
+                            a{
+                                display: block;
+                                padding: 13px 20px;
+                            }
+                            &.button-booking{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &-list{
+                // display: table;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 0;
+            }
+            &-item{
+                position: relative;
+                // display: table-cell;
+                &.button-booking{
+                    .menu-link{
+                        padding: 10px;
+                    }
+                }
+                &.hasChildren{
+                    .menu-link{
+                        padding-right: 20px;
+                    }
+                    .sub-arrow{
+                        position: absolute;
+                        top: 0;
+                        left: auto;
+                        right: 20px;
+                        width: 43px;
+                        height: 43px;
+                        text-align: center;
+                        text-shadow: none;
+                        line-height: 43px !important;
+                        @media(min-width:1200px){
+                            display: block;
+                            background: url('../images/lang-drop-icon.png') no-repeat;
+                            width: 19px;
+                            height: 10px;
+                            top: 41px;
+                            right: -3px;
+                        }
+                    }
+                }
+                .submenu{
+                    display: none;
+                    width: auto;
+                    margin: 10px 0 0;
+                    background: rgba(179, 179, 179, 0.1);
+                    padding: 20px 0;
+                    li{
+                        a{
+                            display: block;
+                            padding: 13px 30px;
+                            color: #333;
+                            font-size: 15px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            line-height: 17px;
+                            text-decoration: none;
+                            &:hover{
+                                color: var(--second-color);
+                            }
+                            @media(min-width:1200px){
+                                text-align: left;
+                                font-size: 14px;
+                                font-weight: 700;
+                                letter-spacing: 1px;
+                                white-space: nowrap;
+                                padding: 15px 20px;
+                            }
+                        }
+                    }
+                    @media(min-width:1200px){
+                        position: absolute;
+                        width: 290px !important;
+                        background: white;
+                        border-radius: 5px;
+                        box-shadow: 0px 0px 7px 0px #8a8a8a;
+                        top: 75px !important;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        padding: 0;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            top: -6px;
+                            border-width: 0 7.5px 7px 7.5px !important;
+                            border-color: transparent transparent white transparent !important;
+                        }
+                    }
+                }
+            }
+            &-link{
+                display: inline-block;
+                position: relative;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 30px 15px;
+                
+            }
+        }
+        .button-booking{
+            font-family: var(--font-second);
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #fff;
+            background: var(--second-color);
+            padding: 5px 30px 2px;
+            border-radius: 5px;
+            display: block;
+            transition: all 0.3s ease;
+            text-align: center;
+            margin-top: 12px;
+            letter-spacing: 1px;
+            @media(min-width:1200px){
+                display: inline-block !important;
+                margin-top: 0;
+                border-bottom: 8px solid var(--second-color);
+                background: none;
+                border-radius: 0;
+                color: var(--second-color);
+                font-size: 35px;
+                padding: 11px 15px 8px;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    @media(min-width:1200px){
+        padding: 0;
+    }
+}
